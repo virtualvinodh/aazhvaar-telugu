@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>13.0.115.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <GraphicFile>src\splash.bmp</GraphicFile>
+    <MSIFileName>C:\Users\vinod\OneDrive\Desktop\keymandesktop-13.0.115.0\keymandesktop.msi</MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder>Aazhvaar Telugu Phonetic</Folder>
+    <Items>
+      <Item>
+        <Name>Start Keyman</Name>
+        <FileName>(Start Product)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Keyboard Mapping</Name>
+        <FileName>keyboard.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>About Aazhvaar Telugu</Name>
+        <FileName>readme.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>How to use</Name>
+        <FileName>how_to_use.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <Version URL="">1.0</Version>
+    <Name URL="">Aazhvaar Telugu Phonetic</Name>
+    <Copyright URL="">© 2020 Vinodh Rajan</Copyright>
+    <Author URL="mailto:vinodh.vinodh@gmail.com">Vinodh Rajan</Author>
+    <WebSite URL="http://www.virtualvinodh.com">http://www.virtualvinodh.com</WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>src\aazhvaar_telugu.ico</Name>
+      <Description>File aazhvaar_telugu.ico</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ico</FileType>
+    </File>
+    <File>
+      <Name>src\aazhvaar_telugu.js</Name>
+      <Description>File aazhvaar_telugu.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>src\aazhvaar_telugu.kmn</Name>
+      <Description>File aazhvaar_telugu.kmn</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmn</FileType>
+    </File>
+    <File>
+      <Name>src\aazhvaar_telugu.kmx</Name>
+      <Description>Keyboard Aazhvaar Telugu Phonetic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>src\AazhvaarTelugu.otf</Name>
+      <Description>Font Aazhvaar Telugu</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>src\keyboard.htm</Name>
+      <Description>File keyboard.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>src\readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>src\splash.bmp</Name>
+      <Description>File splash.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>src\how_to_use.pdf</Name>
+      <Description>File how_to_use.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Aazhvaar Telugu Phonetic</Name>
+      <ID>aazhvaar_telugu</ID>
+      <Version>1.0</Version>
+      <Languages/>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

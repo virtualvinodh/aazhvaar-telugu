@@ -1,0 +1,172 @@
+﻿c Tamil Extended Phonetic Keyboard Layout
+store(&VERSION) '10.0'
+store(&NAME) 'Aazhvaar Telugu Phonetic'
+store(&COPYRIGHT) '© 2020 Vinodh Rajan'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'windows linux web androidphone androidtablet'
+store(&BITMAP) 'aazhvaar_telugu.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c Vowels
+
++ "a" > 'అ'
++ "A" > 'ఆ'
+'అ' + "a" > 'ఆ'
++ "i" > 'ఇ'
++ "I" > 'ఈ'
+'ఇ' + "i" > 'ఈ'
++ "R" > 'ఋ'
++ "u" > 'ఉ'
+'ఉ' + "u" > 'ఊ'
++ "U" > 'ఊ'
+'ఋ' + "u" > 'ౠ'
++ "W" > 'ఌ'
+"ఌ" + "u"> 'ౡ'
++ "e" > 'ఎ'
+'ఎ' + 'e' > 'ఏ'
++ "E" > 'ఏ'
+'అ' + "i" > 'ఐ'
++ "o" > 'ఒ'
+'ఒ' + 'o' > 'ఓ'
++ "O" > 'ఓ'
+'అ' + "u" > 'ఔ'
+
+c Combining Signs
++ "M" > 'ం' c Anusvara
++ "H" > 'ః' c Visarga
+
+c shift free Anusvara, Visarga, Avagraha etc. 
+'మ్' + ';' > 'ం' c Anusvara
+'హ్' + ';' > 'ః' c Anusvara
+'అ' + ';' > 'ఽ' c Avagraha
+
+c shift free vocalic
+'రు' + ';' > 'ఋ' c -voc r
+'రూ' + ';' > 'ౠ' c -voc rr
+'లు' + ';' > 'ఌ' c -voc l
+'లూ' + ';' > 'ౡ' c -voc ll
+
+c Consonants
++ "k" > 'క' '్'
+'క' '్' + "h" > 'ఖ' '్'
++ "g" > 'గ'  '్'
+'గ' '్' + "h" > 'ఘ' '్'
++ "G" > 'ఙ' '్'
+
++ "c" > 'చ' '్'
+'చ' '్' + "h" > 'ఛ' '్'
++ "j" > 'జ' '్'
+'జ' '్' + "h" > 'ఝ' '్'
++ "J" > 'ఞ' '్'
+
++ "T" > 'ట' '్'
+'ట' '్' + "h" > 'ఠ' '్'
++ "D" > 'డ' '్'
+'డ' '్' + "h" > 'ఢ' '్'
++ "N" > 'ణ' '్'
+
++ "t" > "త" '్'
+'త' '్' + "h" > 'థ' '్'
++ "d" > 'ద' '్'
+'ద' '్' + "h" > 'ధ' '్'
++ "n" > 'న' '్'
+
++ "p" > 'ప' '్'
+'ప' '్' + "h" > 'ఫ' '్'
++ "b" > 'బ' '్'
+'బ' '్' + "h" > 'భ' '్'
++ "m" > 'మ' '్'
+
++ "y" >'య'  '్'
+'శ' '్' + 'r' >  'శ్ర' '్'
++ "r" > 'ర' '్'
++ "l" > 'ల' '్'
++ "v" > 'వ' '్'
+'క' '్' + "S" > 'క'  '్' 'ష' '్' 
++ "S" > 'ష' '్'
++ "s" > 'స' '్'
+'స' '్' + "h" > 'శ' '్'
++ "h" > 'హ' '్'
+'క' '్' + "S" > 'క'  '్' 'ష' '్' 
+
+c Shift Free
+'త' '్' + ";" > 'ట' '్'
+'ద' '్' + ";" > 'డ' '్'
+'న' '్' + ";" > 'ణ' '్'
+'న్గ్' + ';' > 'ఙ' '్'
+'న్జ్' + ';' > 'ఞ' '్'
+'శ' '్' + ';' >  'ష' '్'
+'ట' '్' + ';' > 'ౘ' '్' 'ౘ' '్'
+
+c South Indic
+'ర' '్' + ';' > 'ఱ' '్'
+'ఱ' '్' + ';' > 'ౘ' '్'
++ "L" > 'ళ' '్'
+'ల' '్' + ';' > 'ళ' '్'
++ "Z"  > 'ఴ' '్'
+
+c Azhvaar Telugu
+'ణ' '్' + ";" > 'ౝ'
++ 'q' > 'ఃʼ'
+
+c Combining Signs
+
+'్' + "a" > nul c Remove Virama
+
+store( cons ) 'కఖగఘఙచఛజఝఞటఠడఢణతథదధనపఫబభమయరలవశషసహఴళౘ'
+
+any(cons) + 'a' > index(cons,1) 'ా' c -aa
+'్' + "A" > 'ా' c -aa
+
+'్' + "i" > 'ి' c -i
+'ి' + "i" > 'ీ' c -ii
+'్' + "I"> 'ీ' c -ii
+
+'్' + "u" > 'ు' c -u
+'ు' + "u" > 'ూ' c -uu
+'్' + "U"> 'ూ' c -uu
+
+'ు' + "=" > U+200D 'ు'  c -uu
+'ూ' + "="> U+200D 'ూ' c -uu
+
+'్' + "R" > 'ృ' c -voc r
+'ృ' + "u" > 'ౄ' c -voc rr
+'్' + "W" > 'ౢ' c -voc l
+'ౢ' + "u" > 'ౣ' c -voc ll
+
+'్' + "e" > 'ె' c -e 
+'ె' + 'e' > 'ే' c -ee
+'్' + "E" > 'ే' c -ee
+any(cons) + "i" >  index(cons, 1) 'ై' c -ai
+'్' + "o" > 'ొ' c  -o
+ 'ొ' + 'o' >  'ో' c -oo
+ '్' + 'O' >  'ో' c -oo
+any(cons) + "u" > index(cons, 1) 'ౌ' c -au
+
+c Shift Free Vocalic
+
+'్రు' + ';' > 'ృ' c -voc r
+'్రూ' + ';' > 'ౄ' c -voc rr
+'్లు' + ';' > 'ౢ' c -voc l
+'్లూ' + ';' > 'ౣ' c -voc ll
+
+c Signs
++ "@" > 'ఽ' c Avagraha
+
+c Devanagari Block
+
+"." + ';' > U+0964 c Danda
+".." + ';' > U+0965 c Danda double
+
+'"' + ";" > U+1CDA c Dirgha svarita
+"'" + ";" > U+0951 c Udatta 
+'_' + ";" > U+0952 c Anudatta
+
+'“' + ";" > U+1CDA c Dirgha svarita
+"‘" + ";" > U+0951 c Udatta 
+
+'”' + ";" > U+1CDA c Dirgha svarita
+"’" + ";" > U+0951 c Udatta 
